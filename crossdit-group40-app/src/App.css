@@ -1,38 +1,129 @@
-* {
-  box-sizing: border-box;
+:root {
+  --main-bg-color: #EFEFEF;
+  --main-bg-color2: #0BA360;
+  --main-bg-color3: #4FBA8B;
+  --main-bg-color4: #C1E0D2;
+  --main-color: black;
+}
+
+html, body {
+  background-color: var(--main-bg-color);
+  color: var(--main-color);
+
+  font-family: 'Open Sans', BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+
+  padding: 0;
+  margin: 0;
+}
+
+h1 {
+  font-size: 60px;
+  font-weight: normal;
+  margin: 0px 0px;
+}
+
+div.MainDiv {
+  width: 100%;
+  text-align: center;
+}
+
+.VideoFrame{
+  background-color: var(--main-bg-color4);
+  padding: 36px 64px;
+  border-radius: 48px;
+  width: min-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.todo {
+  background-color: red;
+}
+
+.HowToBox {
+  padding: 4px 32px;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  width: 546px; 
+}
+
+.HowToBoxTop {
+  border-radius: 32px;
+  background-color: var(--main-bg-color3);
+  color: black;
+
+  padding: 4px 32px;
+  margin: 8px 0px;
+}
+
+.HowToBoxBottom {
+  border-radius: 32px;
+  background-color: white;
+  color: black;
+  padding: 4px 32px;
+  margin: 8px 0px;
+}
+
+.Section {
+  padding: 32px;
+}
+
+ul.HeaderBar {
+  list-style-type: none;
   margin: 0;
   padding: 0;
+  overflow: hidden;
+  background-color: var(--main-bg-color2);
+
+  position: sticky;
+  top: 0;
+  width: 100%;
 }
 
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  line-height: 1.4;
+ul.HeaderBar li {
+  float: left;
 }
 
-a {
-  color: #333;
+ul.HeaderBar li a {
+  display: flex;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
   text-decoration: none;
+  flex-direction: row;
+  align-items: center;
+  height: 46px;
 }
 
-.container{
-  padding: 0 1rem;
+.BigHeaderBarIcon {
+  height: 48px;
 }
 
-.btn {
-  display: inline-block;
-  border: none;
-  background: #555;
-  color: #fff;
-  padding: 7px 20px;
-  cursor: pointer;
+.SmallHeaderBarIcon {
+  height: 24px;
 }
 
-.btn:hover{
-  background: #666;
+.shadow {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+button {
+  background-color: var(--main-bg-color3);
+
+  padding: 18px 48px;
+  border-radius: 24px;
+  border-width: 0px;
+
+  font-size: 20px;
+  font-weight: normal;
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+
+  color: white;
+}
+
+button:hover {
+  background-color: var(--main-bg-color4);
 }
