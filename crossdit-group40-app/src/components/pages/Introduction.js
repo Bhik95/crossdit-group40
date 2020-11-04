@@ -7,7 +7,12 @@ export class Introduction extends Component {
         return (
             <div className="MainDiv">
                 <HeaderBar/>
-                <img src="/imgs/Introduction/waving3_cut.png" className="shadow" width="100%"/>
+                <div className="TheSeedBoxParent">
+                    <div className="TheSeedBox">
+                        <h1 className="TheSeedText">The Seed</h1>
+                    </div>
+                    <img src="/imgs/Introduction/waving3_cut.png" className="shadow" width="100%"/>
+                </div>
                 {/*Intro Video Section */}
                 <div className="Section">
                     <h1>Welcome to the Seed</h1>
@@ -25,12 +30,16 @@ export class Introduction extends Component {
                     <img src="/imgs/line.svg" alt=""/>
                     <p>The steps visualised below are the elements that The Seed are helping you go through.</p>
                     <br/>
-                    <img src="/imgs/Introduction/UserJourney.svg"/>
+                    <div className="VideoFrame shadow">
+                        <img src="/imgs/Introduction/UserJourney.svg"/>
+                    </div>
                 </div>
                 
                 {/*How to section*/}
                 <div className="Section">
-                    <h1>How To</h1>
+                    <h1>How To...</h1>
+                    <img src="/imgs/line.svg" alt="" width="256px" height="64px"/>
+                    <p>The Seed strives to assist you in finding employment in Denmark.<br/>You have to create a profile and complete some courses, so we can match you with a job.<br/>Read the following boxes to learn more about how to do the different steps.</p>
                     <HowToBox top=
                         {
                             <h2>Create a profile</h2>
@@ -95,11 +104,10 @@ export class Introduction extends Component {
                 <div className="Section">
                     <h1>Now you are ready!</h1>
                     <img src="/imgs/line.svg" alt=""/>
-                    <br/>
-                    <br/>
-                    <br/>
-                    <br/>
-                    <button>Create a profile</button>
+                    <div className="YouAreReady">
+                        <img src="/imgs/Introduction/lady pointing.svg" alt=""/>
+                        <button>Create a profile</button>
+                    </div>
                 </div>
             </div>
         )
