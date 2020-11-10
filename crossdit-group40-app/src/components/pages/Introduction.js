@@ -106,7 +106,7 @@ export class Introduction extends Component {
                     <img src="/imgs/line.svg" alt=""/>
                     <div className="YouAreReady">
                         <img src="/imgs/Introduction/lady pointing.svg" alt=""/>
-                        <button>Create a profile</button>
+                        <button className="BigSeedButton">Create a profile</button>
                     </div>
                 </div>
             </div>

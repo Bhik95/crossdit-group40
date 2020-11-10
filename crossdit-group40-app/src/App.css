@@ -6,6 +6,7 @@
   --main-bg-color3: #4FBA8B;
   --main-bg-color4: #C1E0D2;
   --main-color: black;
+  --main-grey-text-color: #7A7C7E;
 }
 
 html, body {
@@ -108,14 +109,14 @@ ul.HeaderBar li a {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
 }
 
-button {
+button.BigSeedButton {
   background-color: var(--main-bg-color3);
 
-  padding: 18px 48px;
-  border-radius: 24px;
+  padding: 12px 32px;
+  border-radius: 32px;
   border-width: 0px;
 
-  font-size: 32px;
+  font-size: 24px;
   font-weight: normal;
 
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
@@ -123,7 +124,7 @@ button {
   color: white;
 }
 
-button:hover {
+button.BigSeedButton:hover {
   background-color: var(--main-bg-color4);
 }
 
@@ -167,4 +168,100 @@ div.YouAreReady img{
 
 div.YouAreReady button{
   margin: auto;
+}
+
+.LoginBox {
+  position: absolute;
+  left:33.333%;
+  top:33.333%;
+  width: 33.333%;
+  height: 33.333%;
+
+  text-align: center;
+}
+
+.LoginBox h1.TheSeedText{
+  font-size: 6vw;
+}
+
+.float-container {
+  border: solid 1px #ccc;
+  padding: 0 8px;
+  position: relative;
+  border-radius: 8px;
+
+  margin: 8px;
+}
+.float-container input.myLabel {
+  border: none;
+  font-size: 16px;
+  margin: 16px 0 10px;
+  outline: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--main-bg-color);
+}
+label.myLabel {
+  font-size: 16px;
+  position: absolute;
+  transform-origin: top left;
+  transform: translate(4px, -8px) scale(.75);
+  transition: all .1s ease-in-out;
+  background-color: var(--main-bg-color);
+}
+
+.float-container select.myLabel {
+  border: none;
+  font-size: 16px;
+  margin: 16px 0 10px;
+  outline: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--main-bg-color);
+}
+
+.toTheRight{
+  float: right;
+}
+
+.ChooseLanguagePageBackground {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+
+  background-color: var(--main-bg-color2);
+}
+
+.ChooseLanguagePageBox{
+  position: absolute;
+  left:40%;
+  top:33.333%;
+  width: 20%;
+  height: 33.333%;
+
+  text-align: left;
+  background-color: var(--main-bg-color);
+  box-shadow: 0px 32px 32px rgba(0, 0, 0, 0.25);
+
+  border-radius: 4px;
+}
+
+.TextButtonGreen{
+  font-size: 18px;
+  padding: 4px 8px;
+  border: 0px;
+
+  color: var(--main-bg-color2);
+}
+
+.TextButtonGreen:hover{
+  color: var(--main-bg-color3);
+}
+
+.margin8px{
+  margin: 16px;
+}
+
+.greyText{
+  color: var(--main-grey-text-color);
 }
