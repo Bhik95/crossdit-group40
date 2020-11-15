@@ -199,13 +199,18 @@ div.YouAreReady button{
 }
 
 .float-container {
-  border: solid 1px #ccc;
+  border: solid 2px #ddd;
   padding: 0 8px;
   position: relative;
   border-radius: 8px;
 
   margin: 8px;
 }
+
+.float-container:hover{
+  border: solid 2px var(--main-bg-color2);
+}
+
 .float-container input.myLabel {
   border: none;
   font-size: 16px;
@@ -224,6 +229,9 @@ label.myLabel {
   background-color: var(--main-bg-color);
 }
 
+.float-container:hover label.myLabel{
+  color: var(--main-bg-color2);
+}
 
 .float-container select.myLabel {
   border: none;
