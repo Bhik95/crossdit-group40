@@ -126,7 +126,40 @@ export class Introduction extends Component {
                     </div>
                     
                     <div className="Section">
-                        <h1 className="Merriweather">TODO TODO TODO TODO!</h1>
+                        <h1 className="Merriweather">What do you expect to take away<br/>from your Seed journey?</h1>
+                        <img src="/imgs/line.svg" alt="" width="256px" height="16px"/>
+                        <div className="Div33Percent marginVertical64px">
+                            <p>What are your learning goals by doing this course? By identifying your goals and takeaways for the courses, it helps you to stay motivated and focused. Furthermore, we are using your expectacions to create new content to help you achieve succes.</p>
+                            <p>You can choose multiple options.</p>
+                        </div>
+
+                        <table className="HowToTable">
+                            <tr>
+                                <td><button className="MultipleOptionButton"><b>How to handle difficult situations in the workplace</b></button></td>
+                                <td><button className="MultipleOptionButton"><b>How to behave if you get sick</b></button></td>
+                                <td><button className="MultipleOptionButton"><b>How unions work in Denmark</b></button></td>
+                            </tr>
+                            <tr>
+                                <td><button className="MultipleOptionButton"><b>What to do if your rights are violated</b></button></td>
+                                <td><button className="MultipleOptionButton"><b>How to deal with and prevent errors in the workplace</b></button></td>
+                                <td><button className="MultipleOptionButton"><b>How you can practice your religion in Denmark</b></button></td>
+                            </tr>
+                            <tr>
+                                <td><button className="MultipleOptionButton"><b>What is expected of me as an employee</b></button></td>
+                                <td><button className="MultipleOptionButton"><b>What a healthy work environment entails</b></button></td>
+                                <td><button className="MultipleOptionButton"><b>How to best prepare for a job interview</b></button></td>
+                            </tr>
+                            <tr>
+                                <td><button className="MultipleOptionButton"><b>How gender equality works in the workplace</b></button></td>
+                                <td><button className="MultipleOptionButton"><b>What it means to be a good colleague</b></button></td>
+                                <td><button className="MultipleOptionButton"><b>How the different industries work</b></button></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td><button className="MultipleOptionButton"><b>Add your own:</b></button></td>
+                                <td></td>
+                            </tr>
+                        </table>
                     </div>
 
                     {/*Summary Section*/}

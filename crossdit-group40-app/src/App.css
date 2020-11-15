@@ -140,8 +140,8 @@ button.BigSeedButton:hover {
 
 .TheSeedBox {
   position: absolute;
-  top: 0%;
-  left: 0%;
+  top: 6%;
+  left: 2%;
   width: 25%;
   height: 25%;
   padding: 5%;
@@ -224,6 +224,7 @@ label.myLabel {
   background-color: var(--main-bg-color);
 }
 
+
 .float-container select.myLabel {
   border: none;
   font-size: 16px;
@@ -250,14 +251,14 @@ label.myLabel {
   position: absolute;
   left:40%;
   top:33.333%;
-  width: 20%;
-  height: 33.333%;
+  width: 360px;
 
   text-align: left;
   background-color: var(--main-bg-color);
   box-shadow: 0px 32px 32px rgba(0, 0, 0, 0.25);
 
   border-radius: 4px;
+  padding: 8px 16px;
 }
 
 .TextButtonGreen{
@@ -266,6 +267,7 @@ label.myLabel {
   border: 0px;
 
   color: var(--main-bg-color2);
+  background-color: transparent;
 }
 
 .TextButtonGreen:hover{
@@ -340,4 +342,23 @@ label.myLabel {
 
 .FooterBar p{
   margin: 32px 128px;
+}
+
+.MultipleOptionButton{
+  background-color: var(--main-bg-color2);
+  color: white;
+  border: 0px;
+  height: 50px;
+  width: 300px;
+  border-radius: 25px;
+  margin: 16px;
+}
+
+.MultipleOptionButton:hover{
+  background-color: var(--main-bg-color3)
+}
+
+.MultipleOptionButton p{
+  font-family: 'Open Sans', BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+  font-size: 20px;
 }
