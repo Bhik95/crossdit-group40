@@ -50,66 +50,85 @@ export class Introduction extends Component {
                         <div className="Div40Percent">
                         <p>The Seed strives to assist you in finding employment in Denmark. You have to create a profile and complete some courses, so we can match you with a job. Read the following boxes to learn more about how to do the different steps.</p>
                         </div>
-                        <HowToBox top=
-                            {
-                                <h2>Create a profile</h2>
-                            }
-                            bottom=
-                            {
-                                <div>
-                                    <p><b>You have to complete 13 courses</b></p>
-                                    <p>The courses are about work customs in Denmark and how to deal with different situations that might arise throughtout your future employment in Denmark.</p>
-                                    <p>Your different answers to the courses will be be used to match you to a specific job, together with your profile.</p>
-                                    <p>You have to go through individual courses concerning topics like social norms and culture.</p>
-                                    <p>Furthermore you have to go through indutry courses concerning topics like Work Tempo and Productivity and Workplace Safety.</p>
-                                </div> 
-                            }
-                        />
-                        <HowToBox top=
-                            {
-                                <h2>Doing the courses</h2>
-                            }
-                            bottom=
-                            {
-                                <div>
-                                    <p><b>You have to complete 13 courses</b></p>
-                                    <p>The courses are about work customs in Denmark and how to deal with different situations that might arise throughtout your future employment in Denmark.</p>
-                                    <p>Your different answers to the courses will be be used to match you to a specific job, together with your profile.</p>
-                                    <p>You have to go through individual courses concerning topics like social norms and culture.</p>
-                                    <p>Furthermore you have to go through indutry courses concerning topics like Work Tempo and Productivity and Workplace Safety.</p>
-                                </div> 
-                            }
-                        />
-                        <HowToBox top=
-                            {
-                                <h2>Get a job match</h2>
-                            }
-                            bottom=
-                            {
-                                <div>
-                                    <p><b>When you get a job match</b></p>
-                                    <p>Based on your profile and you answers in the different courses, we will then find you industry matches that we believe will suit you the best.</p>
-                                    <p>You will get a message when we have found a job match for you, and you will the be able to apply for the job.</p>
-                                </div>
-                            }
-                        />
-                        <HowToBox top=
-                            {
-                                <h2>Prepare for an interview</h2>
-                            }
-                            bottom=
-                            {
-                                <div>
-                                    <p><b>Prepare for a job interview </b></p>
-                                    <p>When you have gotten a job match we will assist you in applying to the open positions within the industry.</p>
-                                    <p>We have tools to help you prepare for a job interview and learn about showing motivation.</p>
-                                    <p>We will help you prepare for a specific interview and go over questions the employeer might ask you based on your profile.</p>
-                                    <p>Learn how to argue why you are a good match.</p>
-                                </div> 
-                            }
-                        />
+                        <table className="HowToTable">
+                            <tr>
+                                <td>
+                                    <HowToBox
+                                        version = "v1"
+                                        imgLink="/imgs/HeaderBar/MyProfile.svg"
+                                        title="Create a profile"
+                                        subtitle="You have to create a personal profile."
+                                        body={
+                                            (
+                                                <div>
+                                                    <p>In order to assist you to the best of our abilities, we will ask you questions about who you are and what sort of experience you have within the jobmarket.</p>
+                                                    <p>Your profile will act as your CV where your different skills and work experience are presented. Based on your different skills and experience, we can use this information to match you with a job looking for the competencies you possess.</p>
+                                                    <p>Having gotten to know you better, you can begin the courses on the platform.</p>
+                                                </div>
+                                            )
+                                        }
+                                    />
+                                </td>
+                                <td>
+                                    <HowToBox
+                                        version = "v2"
+                                        imgLink="/imgs/Introduction/coursesDark.svg"
+                                        title="Do the course"
+                                        subtitle="You have to complete 13 courses"
+                                        body={
+                                            (
+                                                <div>
+                                                    <p>The courses are about work customs in Denmark and how to deal with different situations that might arise throughtout your future employment in Denmark.</p>
+                                                    <p>Your different answers to the courses will be be used to match you to a specific job, together with your profile. You have to go through individual courses concerning topics like social norms and culture.</p>
+                                                    <p>Furthermore you have to go through indutry courses concerning topics like Work Tempo and Productivity and Workplace Safety</p>
+                                                </div>
+                                            )
+                                        }
+                                    />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <HowToBox
+                                        version = "v2"
+                                        imgLink="/imgs/Introduction/JobMatchesDark.svg"
+                                        title="Get a job match"
+                                        subtitle="When you get a job match"
+                                        body={
+                                            (
+                                                <div>
+                                                    <p>Based on your profile and you answers in the different courses, we will then find you industry matches that we believe will suit you the best.</p>
+                                                    <p>You will get a message when we have found a job match for you, and you will the be able to apply for the job.</p>
+                                                </div>
+                                            )
+                                        }
+                                    />
+                                </td>
+                                <td>
+                                    <HowToBox
+                                        version = "v1"
+                                        imgLink="/imgs/Introduction/interview.svg"
+                                        title="Prepare for an interview"
+                                        subtitle="Prepare for a job interview"
+                                        body={
+                                            (
+                                                <div>
+                                                    <p>When you have gotten a job match we will assist you in applying to the open job positions within the industry.</p>
+                                                    <p>We have tools to help you prepare for a job interview and learn about showing motivation</p>
+                                                    <p>We will help you prepare for a specific interview and go over questions the employeer might ask you based on your profile Learn how to argue why you are a good match</p>
+                                                </div>
+                                            )
+                                        }
+                                    />
+                                </td>
+                            </tr>
+                        </table>
                     </div>
                     
+                    <div className="Section">
+                        <h1 className="Merriweather">TODO TODO TODO TODO!</h1>
+                    </div>
+
                     {/*Summary Section*/}
                     <div className="Section">
                         <h1 className="Merriweather">Now you are ready!</h1>

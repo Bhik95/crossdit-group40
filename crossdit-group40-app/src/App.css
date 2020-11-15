@@ -6,6 +6,7 @@
   --main-bg-color2: #0BA360;
   --main-bg-color3: #4FBA8B;
   --main-bg-color4: #C1E0D2;
+  --main-bg-color2-dark: #0A4A2E;
   --main-color: black;
   --main-grey-text-color: #7A7C7E;
 }
@@ -36,28 +37,37 @@ div.MainDiv {
   background-color: red;
 }
 
+.HowToTable{
+  margin: 0px auto;
+}
+
 .HowToBox {
-  padding: 4px 32px;
-
+  padding: 32px 32px;
+  border-radius: 16px;
   width: 546px;
-  margin: 32px auto;
+  height: 546px;
+  margin: 32px 32px;
 }
 
-.HowToBoxTop {
-  border-radius: 32px;
-  background-color: var(--main-bg-color3);
-  color: black;
-
-  padding: 4px 32px;
-  margin: 8px 0px;
-}
-
-.HowToBoxBottom {
-  border-radius: 32px;
+.HowToBox.v1{
   background-color: white;
-  color: black;
-  padding: 4px 32px;
-  margin: 8px 0px;
+}
+
+.HowToBox.v2{
+  background-color:var(--main-bg-color2);
+}
+
+.HowToBox h2{
+  color: --main-bg-color2-dark;
+  margin: 0px;
+}
+
+.HowToBox.v1 p{
+  color: --main-bg-color2-dark;
+}
+
+.HowToBox p.v2{
+  color: white;
 }
 
 .Section {
