@@ -4,7 +4,7 @@ import {Link} from 'react-router-dom';
 function HeaderBar(){
     return (
         <header>
-            <ul className="HeaderBar shadow">
+            <ul className="HeaderBar lightShadow">
                 <li><a href="#"><img src="/imgs/HeaderBar/theSeed.png" alt="" className="BigHeaderBarIcon"/><span><b>THE SEED</b></span></a></li>
                 <li><a href="#"><img src="/imgs/HeaderBar/MyProfile.svg" alt="" className="BigHeaderBarIcon"/><span><b>MY PROFILE</b></span></a></li>
                 <li><a href="#"><img src="/imgs/HeaderBar/JobMatches.svg" alt="" className="BigHeaderBarIcon"/><span><b>JOB MATCHES</b></span></a></li>
