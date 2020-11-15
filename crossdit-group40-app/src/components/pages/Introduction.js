@@ -72,7 +72,7 @@ export class Introduction extends Component {
                                 <td>
                                     <HowToBox
                                         version = "v2"
-                                        imgLink="/imgs/Introduction/coursesDark.svg"
+                                        imgLink="/imgs/Introduction/CoursesDark.svg"
                                         title="Do the course"
                                         subtitle="You have to complete 13 courses"
                                         body={
