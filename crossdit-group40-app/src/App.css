@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Pacifico:regular,bold,italic&subset=latin,latin-ext');
+@import url('https://fonts.googleapis.com/css?family=Merriweather:regular,bold,italic&subset=latin,latin-ext');
 
 :root {
-  --main-bg-color: #EFEFEF;
+  --main-bg-color: #FAFAFA;
   --main-bg-color2: #0BA360;
   --main-bg-color3: #4FBA8B;
   --main-bg-color4: #C1E0D2;
@@ -14,6 +15,7 @@ html, body {
   color: var(--main-color);
 
   font-family: 'Open Sans', BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+  font-size: 20px;
 
   padding: 0;
   margin: 0;
@@ -28,14 +30,6 @@ h1 {
 div.MainDiv {
   width: 100%;
   text-align: center;
-}
-
-.VideoFrame{
-  background-color: var(--main-bg-color4);
-  padding: 36px 64px;
-  border-radius: 48px;
-  width: min-content;
-  margin: 64px auto;
 }
 
 .todo {
@@ -75,7 +69,7 @@ ul.HeaderBar {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: var(--main-bg-color2);
+  background-color: #FCFCFC;
 
   position: sticky;
   top: 0;
@@ -88,13 +82,17 @@ ul.HeaderBar li {
 
 ul.HeaderBar li a {
   display: flex;
-  color: white;
+  color: var(--main-bg-color2);
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
   flex-direction: row;
   align-items: center;
   height: 46px;
+}
+
+ul.HeaderBar li a span{
+  margin: 0px 16px;
 }
 
 .BigHeaderBarIcon {
@@ -134,18 +132,26 @@ button.BigSeedButton:hover {
 
 .TheSeedBox {
   position: absolute;
-  top: 23%;
-  left: 5%;
-  background-color: rgba(196, 196, 196, 0.5);
+  top: 0%;
+  left: 0%;
   width: 25%;
   height: 25%;
   padding: 5%;
 }
 
-h1.TheSeedText {
+.TheSeedText {
   color: var(--main-bg-color2);
+}
+
+h1.TheSeedText {
+  font-size: 6vw;
   font-family: 'Pacifico', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 4vw;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+span.TheSeedText {
+  font-size: 1.5vw;
+  font-family: 'Merriweather', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
@@ -264,4 +270,66 @@ label.myLabel {
 
 .greyText{
   color: var(--main-grey-text-color);
+}
+
+.Merriweather{
+  font-family: 'Merriweather', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.Greyish{
+  color: rgba(0, 0, 0, 0.63);
+}
+
+.float-container-2 {
+  width: 100%;
+  overflow: hidden;
+  margin: 64px 0px;
+}
+
+.float-child-left {
+  text-align: left;
+  width: 400px;
+  float: left;
+  margin: 0px 256px;
+}  
+
+.float-child-right {
+  margin-left: 800px;
+  margin: 0px 256px;
+}
+
+.Div33Percent{
+  position: relative;
+  left: 33.3333%;
+  width: 33%;
+}
+
+.Div40Percent{
+  position: relative;
+  left: 30%;
+  width: 40%;
+}
+
+.Div50Percent{
+  position: relative;
+  left: 25%;
+  width: 50%;
+}
+
+.marginVertical64px{
+  margin: 64px 0px;
+}
+
+.FooterBar{
+  background-color: var(--main-bg-color2);
+  color: white;
+  margin: 0px;
+  padding: 0px;
+
+  width: 100%;
+  position: absolute;
+}
+
+.FooterBar p{
+  margin: 32px 128px;
 }
