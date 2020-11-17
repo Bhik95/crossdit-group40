@@ -34,7 +34,8 @@ export class Introduction extends Component {
                 "What it means to be a good colleague",
                 "How the different industries work"
             ]
-        ]
+        ],
+        states: {}
       };
     
         addExpectationButton(){
@@ -58,17 +59,27 @@ export class Introduction extends Component {
           }
       };
 
+      toggleExpectationButton(text){
+          var newStates = this.state.states;
+            if(this.state.states[text] === undefined || this.state.states[text] === false){
+                newStates[text] = true;
+            }
+            else{
+                newStates[text] = false;
+            }
+            this.setState({states: newStates});
+      }
+
     render() {
 
         var expectationRows = (
             
             this.state.expectations.map(function(row, i) {
-                console.log(row);
                 return (
                     <tr>
                     {row.map(function(item, ii){
-                        return <td><button className="MultipleOptionButton"><b>{item}</b></button></td>;
-                    })}
+                        return <td><button className={this.state.states[item] === undefined || this.state.states[item] === false ? "MultipleOptionButton" : "MultipleOptionButton2"} onClick={() => this.toggleExpectationButton(item)}><b>{item}</b></button></td>;
+                    }.bind(this))}
                     </tr>
                 )
             }.bind(this))

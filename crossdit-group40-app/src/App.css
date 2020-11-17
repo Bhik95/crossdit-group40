@@ -368,6 +368,16 @@ label.myLabel {
   margin: 16px;
 }
 
+.MultipleOptionButton2{
+  background-color: var(--main-bg-color2-dark);
+  color: white;
+  border: 0px;
+  height: 50px;
+  width: 300px;
+  border-radius: 25px;
+  margin: 16px;
+}
+
 .MultipleOptionButton:hover{
   background-color: var(--main-bg-color3)
 }
