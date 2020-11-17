@@ -16,14 +16,14 @@ html, body {
   color: var(--main-color);
 
   font-family: 'Open Sans', BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
-  font-size: 20px;
+  font-size: 17px;
 
   padding: 0;
   margin: 0;
 }
 
 h1 {
-  font-size: 60px;
+  font-size: 50px;
   font-weight: normal;
   margin: 0px 0px;
 }
@@ -44,8 +44,8 @@ div.MainDiv {
 .HowToBox {
   padding: 32px 32px;
   border-radius: 16px;
-  width: 546px;
-  height: 546px;
+  width: 450px;
+  height: 450px;
   margin: 32px 32px;
 }
 
@@ -124,7 +124,7 @@ ul.HeaderBar li a span{
 }
 
 button.BigSeedButton {
-  background-color: var(--main-bg-color3);
+  background-color: var(--main-bg-color2);
 
   padding: 12px 32px;
   border-radius: 32px;
@@ -310,16 +310,16 @@ label.myLabel {
   margin: 64px 0px;
 }
 
-.float-child-left {
+.float-child-left-2 {
   text-align: left;
   width: 400px;
   float: left;
-  margin: 0px 256px;
+  margin: 0px 128px;
 }  
 
-.float-child-right {
-  margin-left: 800px;
+.float-child-right-2 {
   margin: 0px 256px;
+  margin-left: 700px;
 }
 
 .Div33Percent{

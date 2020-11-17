@@ -4,7 +4,77 @@ import FooterBar from '../layout/FooterBar';
 import HowToBox from '../HowToBox';
 
 export class Introduction extends Component {
+
+    constructor(props) {
+        super(props);
+    
+        // Necessario per accedere al corretto valore di `this` all'interno della callback
+        this.addExpectationButton = this.addExpectationButton.bind(this);
+      }
+
+    state = {
+        expectations: [
+            [
+                "How to handle difficult situations in the workplace",
+                "How to behave if you get sick",
+                "How unions work in Denmark"
+            ],
+            [
+                "What to do if your rights are violated",
+                "How to deal with and prevent errors in the workplace",
+                "How you can practice your religion in Denmark"
+            ],
+            [
+                "What is expected of me as an employee",
+                "What a healthy work environment entails",
+                "How to best prepare for a job interview"
+            ],
+            [
+                "How gender equality works in the workplace",
+                "What it means to be a good colleague",
+                "How the different industries work"
+            ]
+        ]
+      };
+    
+        addExpectationButton(){
+            this.addExpectation(document.getElementById("customExpectation").value);
+        };
+
+      // Add Todo
+      addExpectation = text => {
+          if(this.state.expectations.length == 0){
+            this.setState({expectations: [[text]]});
+          }
+          else{
+            var newExpectations = this.state.expectations;
+            if(this.state.expectations[this.state.expectations.length - 1].length == 3){
+                newExpectations[this.state.expectations.length] = [text];
+            }
+            else{
+                newExpectations[this.state.expectations.length - 1][newExpectations[this.state.expectations.length - 1].length] = text;
+            }
+            this.setState({expectations: newExpectations});
+          }
+      };
+
     render() {
+
+        var expectationRows = (
+            
+            this.state.expectations.map(function(row, i) {
+                console.log(row);
+                return (
+                    <tr>
+                    {row.map(function(item, ii){
+                        return <td><button className="MultipleOptionButton"><b>{item}</b></button></td>;
+                    })}
+                    </tr>
+                )
+            }.bind(this))
+            
+        );
+
         return (
             <div>
                 <div className="MainDiv">
@@ -18,14 +88,14 @@ export class Introduction extends Component {
                     </div>
                     {/*Intro Video Section */}
                     <div className="Section">
-                        <h1 className="Merriweather Greyish">Welcome to<br/>The Seed</h1>
+                        <h1 className="Merriweather">Welcome to<br/>The Seed</h1>
                         <img src="/imgs/line.svg" alt="" width="196px" height="16px"/>
                         <div className="float-container-2">
-                            <div className="float-child-left">
+                            <div className="float-child-left-2">
                                 <p>The Seed is a digital tool designed to match you to your new job. You have to go through different courses about the danish labour market, and create a profile about yourself. With that information, we can match you with your new job.</p>
                                 <p>Click on the introduction video to learn more about how The Seed is working.</p>
                             </div>
-                            <div className="float-child-right">
+                            <div className="float-child-right-2">
                                 <iframe src="https://explee.com/embed/video/0p845jd?" width="640" height="360" frameborder="0" allowfullscreen="" mozallowfullscreen="true" webkitallowfullscreen="true" onmousewheel=""></iframe>
                             </div>
                         </div>
@@ -134,30 +204,16 @@ export class Introduction extends Component {
                         </div>
 
                         <table className="HowToTable">
-                            <tr>
-                                <td><button className="MultipleOptionButton"><b>How to handle difficult situations in the workplace</b></button></td>
-                                <td><button className="MultipleOptionButton"><b>How to behave if you get sick</b></button></td>
-                                <td><button className="MultipleOptionButton"><b>How unions work in Denmark</b></button></td>
-                            </tr>
-                            <tr>
-                                <td><button className="MultipleOptionButton"><b>What to do if your rights are violated</b></button></td>
-                                <td><button className="MultipleOptionButton"><b>How to deal with and prevent errors in the workplace</b></button></td>
-                                <td><button className="MultipleOptionButton"><b>How you can practice your religion in Denmark</b></button></td>
-                            </tr>
-                            <tr>
-                                <td><button className="MultipleOptionButton"><b>What is expected of me as an employee</b></button></td>
-                                <td><button className="MultipleOptionButton"><b>What a healthy work environment entails</b></button></td>
-                                <td><button className="MultipleOptionButton"><b>How to best prepare for a job interview</b></button></td>
-                            </tr>
-                            <tr>
-                                <td><button className="MultipleOptionButton"><b>How gender equality works in the workplace</b></button></td>
-                                <td><button className="MultipleOptionButton"><b>What it means to be a good colleague</b></button></td>
-                                <td><button className="MultipleOptionButton"><b>How the different industries work</b></button></td>
-                            </tr>
+                            {expectationRows}
                             <tr>
                                 <td></td>
-                                <td><button className="MultipleOptionButton"><b>Add your own:</b></button></td>
-                                <td></td>
+                                <td>
+                                    <div id="floatContainer" class="float-container">
+                                        <label for="customExpectation" className="myLabel">Add your own</label>
+                                        <input id="customExpectation" className="myLabel" type="text"/>
+                                    </div>
+                                </td>
+                                <td style={{"text-align": "left"}}><button onClick={this.addExpectationButton}>Add</button></td>
                             </tr>
                         </table>
                     </div>
@@ -171,7 +227,9 @@ export class Introduction extends Component {
                                 Now you are ready to start your learning journey at The Seed. We encourage you to start by creating your profile, before you take the different courses.<br/><br/>Good luck!
                             </p>
                         </div>
-                        <button className="BigSeedButton">Create a profile</button>
+                        <div className="marginVertical64px">
+                            <button className="BigSeedButton">Create a profile</button>
+                        </div> 
                     </div>
                 </div>
                 <FooterBar/>
