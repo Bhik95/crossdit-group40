@@ -13,8 +13,11 @@ export class ChooseLanguagePage extends Component {
                             <select in="language" className="myLabel" name="language">
                                 <option value="english">English</option>
                                 <option value="arabic">Arabic</option>
-                                <option value="danish">Danish</option>
-                                <option value="italian">Italian</option>
+                                <option value="kurdish">Kurdish</option>
+                                <option value="urdu">Urdu</option>
+                                <option value="persian">Persian</option>
+                                <option value="vietnamese">Vietnamese</option>
+                                <option value="hindi">Hindi</option>
                             </select>
                         </div>
                         <a href="/intro"><button className="TextButtonGreen toTheRight">SAVE</button></a>
