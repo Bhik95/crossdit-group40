@@ -95,7 +95,7 @@ export class Introduction extends Component {
                             <h1 className="TheSeedText">The Seed</h1>
                             <span className="TheSeedText">Cultivates the good match</span>
                         </div>
-                        <img src="/imgs/Introduction/waving3_cut.png" width="100%"/>
+                        <img src="/imgs/Introduction/twomen.png" width="100%"/>
                     </div>
                     {/*Intro Video Section */}
                     <div className="Section">
